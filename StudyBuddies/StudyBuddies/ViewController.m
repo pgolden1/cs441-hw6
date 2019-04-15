@@ -19,5 +19,13 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+-(IBAction)rotateCurrentBlockLeft:(UIButton *)sender {
+    NSLog(@"Calling rotate left");
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc]
+                                    initWithURL:[NSURL
+                                                 URLWithString:@"http://www.sth.com/action/verify.php"]];
+
+}
+
 
 @end
