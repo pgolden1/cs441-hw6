@@ -2,6 +2,36 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:StudyBuddies.xcodeproj">
+      location = "group:/Users/petergolden/CS_HW/441/HW6/cs441-hw6/StudyBuddies/StudyBuddies/CreateAccountVc.m">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/petergolden/CS_HW/441/HW6/cs441-hw6/StudyBuddies/StudyBuddies/CreateAccountVc.h">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/petergolden/CS_HW/441/HW6/cs441-hw6/StudyBuddies/StudyBuddies/YourSSVc.m">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/petergolden/CS_HW/441/HW6/cs441-hw6/StudyBuddies/StudyBuddies/YourSSVc.h">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/petergolden/CS_HW/441/HW6/cs441-hw6/StudyBuddies/StudyBuddies/NewSSVc.m">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/petergolden/CS_HW/441/HW6/cs441-hw6/StudyBuddies/StudyBuddies/NewSSVc.h">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/petergolden/CS_HW/441/HW6/cs441-hw6/StudyBuddies/StudyBuddies/CurrentActiveVc.m">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/petergolden/CS_HW/441/HW6/cs441-hw6/StudyBuddies/StudyBuddies/CurrentActiveVc.h">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/petergolden/CS_HW/441/HW6/cs441-hw6/StudyBuddies/StudyBuddies/LoggedInVc.m">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/petergolden/CS_HW/441/HW6/cs441-hw6/StudyBuddies/StudyBuddies/LoggedInVc.h">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>

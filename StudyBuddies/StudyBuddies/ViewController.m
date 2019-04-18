@@ -48,6 +48,8 @@
                 NSLog(@"Login SUCCESS");
                 NSString *message = @"Login successful!";
                 [self performSelectorOnMainThread:@selector(updateDisplay:) withObject:message waitUntilDone:YES];
+                
+                //[self performSegueWithIdentifier:@"LogInSegue" sender:self]; crashes, need to figure out how to properly invoke this
             }
             else
             {
@@ -68,6 +70,11 @@
 -(void)updateDisplay:(NSString *)data {
     [self.errorMessage setText:data];
 }
+
+- (IBAction)unwindToMainMenuViewController:(UIStoryboardSegue *)unwindSegue
+{
+}
+
 
 
 @end

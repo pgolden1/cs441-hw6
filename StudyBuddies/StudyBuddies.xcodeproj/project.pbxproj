@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B0E338F522692DCC00E81F2A /* LoggedInVc.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E338F422692DCC00E81F2A /* LoggedInVc.m */; };
+		B0E338F8226933C100E81F2A /* CurrentActiveVc.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E338F7226933C100E81F2A /* CurrentActiveVc.m */; };
+		B0E338FC226934B100E81F2A /* NewSSVc.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E338FB226934B100E81F2A /* NewSSVc.m */; };
+		B0E338FF2269350900E81F2A /* YourSSVc.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E338FE2269350900E81F2A /* YourSSVc.m */; };
+		B0E339012269360900E81F2A /* CreateAccountVc.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E339002269360900E81F2A /* CreateAccountVc.m */; };
 		B0F89FD3225D8AA200F9871A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F89FD2225D8AA200F9871A /* AppDelegate.m */; };
 		B0F89FD6225D8AA300F9871A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F89FD5225D8AA300F9871A /* ViewController.m */; };
 		B0F89FD9225D8AA300F9871A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0F89FD7225D8AA300F9871A /* Main.storyboard */; };
@@ -35,6 +40,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B0E338F422692DCC00E81F2A /* LoggedInVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LoggedInVc.m; path = "/Users/petergolden/CS_HW/441/HW6/cs441-hw6/StudyBuddies/StudyBuddies/LoggedInVc.m"; sourceTree = "<absolute>"; };
+		B0E338F622692DCE00E81F2A /* LoggedInVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LoggedInVc.h; path = "/Users/petergolden/CS_HW/441/HW6/cs441-hw6/StudyBuddies/StudyBuddies/LoggedInVc.h"; sourceTree = "<absolute>"; };
+		B0E338F7226933C100E81F2A /* CurrentActiveVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CurrentActiveVc.m; path = "/Users/petergolden/CS_HW/441/HW6/cs441-hw6/StudyBuddies/StudyBuddies/CurrentActiveVc.m"; sourceTree = "<absolute>"; };
+		B0E338F9226933C300E81F2A /* CurrentActiveVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CurrentActiveVc.h; path = "/Users/petergolden/CS_HW/441/HW6/cs441-hw6/StudyBuddies/StudyBuddies/CurrentActiveVc.h"; sourceTree = "<absolute>"; };
+		B0E338FA2269349E00E81F2A /* NewSSVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NewSSVc.h; path = "/Users/petergolden/CS_HW/441/HW6/cs441-hw6/StudyBuddies/StudyBuddies/NewSSVc.h"; sourceTree = "<absolute>"; };
+		B0E338FB226934B100E81F2A /* NewSSVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NewSSVc.m; path = "/Users/petergolden/CS_HW/441/HW6/cs441-hw6/StudyBuddies/StudyBuddies/NewSSVc.m"; sourceTree = "<absolute>"; };
+		B0E338FD226934F400E81F2A /* YourSSVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = YourSSVc.h; path = "/Users/petergolden/CS_HW/441/HW6/cs441-hw6/StudyBuddies/StudyBuddies/YourSSVc.h"; sourceTree = "<absolute>"; };
+		B0E338FE2269350900E81F2A /* YourSSVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = YourSSVc.m; path = "/Users/petergolden/CS_HW/441/HW6/cs441-hw6/StudyBuddies/StudyBuddies/YourSSVc.m"; sourceTree = "<absolute>"; };
+		B0E339002269360900E81F2A /* CreateAccountVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CreateAccountVc.m; path = "/Users/petergolden/CS_HW/441/HW6/cs441-hw6/StudyBuddies/StudyBuddies/CreateAccountVc.m"; sourceTree = "<absolute>"; };
+		B0E339022269360B00E81F2A /* CreateAccountVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CreateAccountVc.h; path = "/Users/petergolden/CS_HW/441/HW6/cs441-hw6/StudyBuddies/StudyBuddies/CreateAccountVc.h"; sourceTree = "<absolute>"; };
 		B0F89FCE225D8AA200F9871A /* StudyBuddies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyBuddies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F89FD1225D8AA200F9871A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B0F89FD2225D8AA200F9871A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -105,6 +120,16 @@
 				B0F89FD2225D8AA200F9871A /* AppDelegate.m */,
 				B0F89FD4225D8AA300F9871A /* ViewController.h */,
 				B0F89FD5225D8AA300F9871A /* ViewController.m */,
+				B0E339022269360B00E81F2A /* CreateAccountVc.h */,
+				B0E339002269360900E81F2A /* CreateAccountVc.m */,
+				B0E338F622692DCE00E81F2A /* LoggedInVc.h */,
+				B0E338F422692DCC00E81F2A /* LoggedInVc.m */,
+				B0E338F9226933C300E81F2A /* CurrentActiveVc.h */,
+				B0E338F7226933C100E81F2A /* CurrentActiveVc.m */,
+				B0E338FA2269349E00E81F2A /* NewSSVc.h */,
+				B0E338FB226934B100E81F2A /* NewSSVc.m */,
+				B0E338FD226934F400E81F2A /* YourSSVc.h */,
+				B0E338FE2269350900E81F2A /* YourSSVc.m */,
 				B0F89FD7225D8AA300F9871A /* Main.storyboard */,
 				B0F89FDA225D8AA400F9871A /* Assets.xcassets */,
 				B0F89FDC225D8AA400F9871A /* LaunchScreen.storyboard */,
@@ -263,7 +288,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0F89FD6225D8AA300F9871A /* ViewController.m in Sources */,
+				B0E338FC226934B100E81F2A /* NewSSVc.m in Sources */,
+				B0E338F522692DCC00E81F2A /* LoggedInVc.m in Sources */,
 				B0F89FE1225D8AA400F9871A /* main.m in Sources */,
+				B0E338F8226933C100E81F2A /* CurrentActiveVc.m in Sources */,
+				B0E338FF2269350900E81F2A /* YourSSVc.m in Sources */,
+				B0E339012269360900E81F2A /* CreateAccountVc.m in Sources */,
 				B0F89FD3225D8AA200F9871A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
