@@ -40,16 +40,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B0E338F422692DCC00E81F2A /* LoggedInVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LoggedInVc.m; path = "/Users/petergolden/CS_HW/441/HW6/cs441-hw6/StudyBuddies/StudyBuddies/LoggedInVc.m"; sourceTree = "<absolute>"; };
-		B0E338F622692DCE00E81F2A /* LoggedInVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LoggedInVc.h; path = "/Users/petergolden/CS_HW/441/HW6/cs441-hw6/StudyBuddies/StudyBuddies/LoggedInVc.h"; sourceTree = "<absolute>"; };
-		B0E338F7226933C100E81F2A /* CurrentActiveVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CurrentActiveVc.m; path = "/Users/petergolden/CS_HW/441/HW6/cs441-hw6/StudyBuddies/StudyBuddies/CurrentActiveVc.m"; sourceTree = "<absolute>"; };
-		B0E338F9226933C300E81F2A /* CurrentActiveVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CurrentActiveVc.h; path = "/Users/petergolden/CS_HW/441/HW6/cs441-hw6/StudyBuddies/StudyBuddies/CurrentActiveVc.h"; sourceTree = "<absolute>"; };
-		B0E338FA2269349E00E81F2A /* NewSSVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NewSSVc.h; path = "/Users/petergolden/CS_HW/441/HW6/cs441-hw6/StudyBuddies/StudyBuddies/NewSSVc.h"; sourceTree = "<absolute>"; };
-		B0E338FB226934B100E81F2A /* NewSSVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NewSSVc.m; path = "/Users/petergolden/CS_HW/441/HW6/cs441-hw6/StudyBuddies/StudyBuddies/NewSSVc.m"; sourceTree = "<absolute>"; };
-		B0E338FD226934F400E81F2A /* YourSSVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = YourSSVc.h; path = "/Users/petergolden/CS_HW/441/HW6/cs441-hw6/StudyBuddies/StudyBuddies/YourSSVc.h"; sourceTree = "<absolute>"; };
-		B0E338FE2269350900E81F2A /* YourSSVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = YourSSVc.m; path = "/Users/petergolden/CS_HW/441/HW6/cs441-hw6/StudyBuddies/StudyBuddies/YourSSVc.m"; sourceTree = "<absolute>"; };
-		B0E339002269360900E81F2A /* CreateAccountVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CreateAccountVc.m; path = "/Users/petergolden/CS_HW/441/HW6/cs441-hw6/StudyBuddies/StudyBuddies/CreateAccountVc.m"; sourceTree = "<absolute>"; };
-		B0E339022269360B00E81F2A /* CreateAccountVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CreateAccountVc.h; path = "/Users/petergolden/CS_HW/441/HW6/cs441-hw6/StudyBuddies/StudyBuddies/CreateAccountVc.h"; sourceTree = "<absolute>"; };
+		B0E338F422692DCC00E81F2A /* LoggedInVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoggedInVc.m; sourceTree = "<group>"; };
+		B0E338F622692DCE00E81F2A /* LoggedInVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoggedInVc.h; sourceTree = "<group>"; };
+		B0E338F7226933C100E81F2A /* CurrentActiveVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurrentActiveVc.m; sourceTree = "<group>"; };
+		B0E338F9226933C300E81F2A /* CurrentActiveVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurrentActiveVc.h; sourceTree = "<group>"; };
+		B0E338FA2269349E00E81F2A /* NewSSVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewSSVc.h; sourceTree = "<group>"; };
+		B0E338FB226934B100E81F2A /* NewSSVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewSSVc.m; sourceTree = "<group>"; };
+		B0E338FD226934F400E81F2A /* YourSSVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YourSSVc.h; sourceTree = "<group>"; };
+		B0E338FE2269350900E81F2A /* YourSSVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YourSSVc.m; sourceTree = "<group>"; };
+		B0E339002269360900E81F2A /* CreateAccountVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateAccountVc.m; sourceTree = "<group>"; };
+		B0E339022269360B00E81F2A /* CreateAccountVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateAccountVc.h; sourceTree = "<group>"; };
 		B0F89FCE225D8AA200F9871A /* StudyBuddies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyBuddies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F89FD1225D8AA200F9871A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B0F89FD2225D8AA200F9871A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };

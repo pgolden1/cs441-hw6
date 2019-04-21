@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -566,6 +566,9 @@
                                 <rect key="frame" x="154" y="723" width="107" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Create Account"/>
+                                <connections>
+                                    <action selector="attemptCreateAccount:" destination="ryM-US-Vx9" eventType="touchUpInside" id="XyA-fD-b3A"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cl1-50-t63">
                                 <rect key="frame" x="96" y="480" width="88" height="21"/>
@@ -621,6 +624,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Gxy-5c-6Ho"/>
                     </view>
+                    <connections>
+                        <outlet property="email" destination="aue-5n-kBk" id="O1s-G5-zxg"/>
+                        <outlet property="first" destination="tdr-36-xmi" id="YGe-8Y-Adu"/>
+                        <outlet property="last" destination="e5V-Pj-gPc" id="Jll-ET-d5V"/>
+                        <outlet property="password" destination="s0q-u4-iUZ" id="017-QZ-EN5"/>
+                        <outlet property="repassword" destination="k8U-Tc-lM9" id="8dh-LB-It7"/>
+                        <outlet property="username" destination="HQ8-wX-bGS" id="8GJ-Zn-R7g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O5A-ab-Q5I" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="kqp-o7-fap" userLabel="Exit" sceneMemberID="exit"/>

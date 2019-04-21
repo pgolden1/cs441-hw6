@@ -12,6 +12,14 @@
 
 @interface CreateAccountVc : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *username;
+@property (weak, nonatomic) IBOutlet UITextField *password;
+@property (weak, nonatomic) IBOutlet UITextField *repassword;
+
+@property (weak, nonatomic) IBOutlet UITextField *first;
+@property (weak, nonatomic) IBOutlet UITextField *last;
+@property (weak, nonatomic) IBOutlet UITextField *email;
+
 @end
 
 #endif /* CreateAccountVc_h */

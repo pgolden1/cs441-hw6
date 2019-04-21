@@ -2,6 +2,9 @@ create table if not exists jkunnum1_studdyBuddyUsers.users (
 	userID int(11) not null auto_increment,
 	username varchar(64),
 	password varchar(64),
+	first varchar(32),
+	last varchar(32),
+	email varchar(32),
 	primary key (userID)
 );
 
