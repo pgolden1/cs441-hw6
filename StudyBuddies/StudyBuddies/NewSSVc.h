@@ -12,6 +12,15 @@
 
 @interface NewSSVc : UIViewController
 
+@property NSString *username;
+
+@property (weak, nonatomic) IBOutlet UITextField *location;
+@property (weak, nonatomic) IBOutlet UITextField *subject;
+@property (weak, nonatomic) IBOutlet UITextField *date;
+@property (weak, nonatomic) IBOutlet UITextField *time;
+@property (weak, nonatomic) IBOutlet UILabel *maxStudents;
+@property (weak, nonatomic) IBOutlet UILabel *errorMessage;
+
 @end
 
 #endif /* NewSSVc_h */
