@@ -13,6 +13,9 @@
 
 @interface LoggedInVc : UIViewController
 
+@property NSString *username;
+@property (weak, nonatomic) IBOutlet UILabel *username_label;
+
 @end
 
 #endif /* LoggedInVc_h */

@@ -249,11 +249,17 @@
                                 <rect key="frame" x="183" y="519" width="48" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Logout"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="EDJ-vX-gPq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="UjE-2d-c2e"/>
                     </view>
+                    <connections>
+                        <outlet property="username_label" destination="wFy-IZ-GFg" id="LHp-n1-M5n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Vv-wO-hD8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -633,4 +639,7 @@
             <point key="canvasLocation" x="1109" y="113"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="EDJ-vX-gPq"/>
+    </inferredMetricsTieBreakers>
 </document>

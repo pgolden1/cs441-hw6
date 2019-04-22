@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "CreateAccountVc.h"
+#import "LoggedInVc.h"
 
 @interface ViewController ()
 
@@ -74,6 +75,13 @@
 
 -(void)logIn:(NSString *)segueName {
     [self performSegueWithIdentifier:segueName sender:self.view];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    LoggedInVc *vc = segue.destinationViewController;
+    if ([segue.identifier isEqualToString:@"loggedIn"]) {
+        vc.username = self.username.text;
+    }
 }
 
 - (IBAction)unwindToMainMenuViewController:(UIStoryboardSegue *)unwindSegue

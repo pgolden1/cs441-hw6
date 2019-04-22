@@ -13,6 +13,11 @@
 
 @implementation LoggedInVc
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.username_label.text = self.username;
+}
+
 - (IBAction)unwindToLoggedInViewController:(UIStoryboardSegue *)unwindSegue
 {
 }
