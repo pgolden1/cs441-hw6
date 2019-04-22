@@ -31,9 +31,6 @@
         [self performSelectorOnMainThread:@selector(updateDisplay:) withObject:message waitUntilDone:YES];
         return;
     }
-    
-    if ()
-    
 }
 
 - (IBAction)valueChanged:(UIStepper *)sender {
