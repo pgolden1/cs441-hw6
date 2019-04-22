@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CreateAccountVc.h"
 
 @interface ViewController ()
 
@@ -49,7 +50,7 @@
                 NSString *message = @"Login successful!";
                 [self performSelectorOnMainThread:@selector(updateDisplay:) withObject:message waitUntilDone:YES];
                 
-                //[self performSegueWithIdentifier:@"LogInSegue" sender:self]; crashes, need to figure out how to properly invoke this
+                [self performSelectorOnMainThread:@selector(logIn:) withObject:@"loggedIn" waitUntilDone:YES];
             }
             else
             {
@@ -71,10 +72,13 @@
     [self.errorMessage setText:data];
 }
 
+-(void)logIn:(NSString *)segueName {
+    [self performSegueWithIdentifier:segueName sender:self.view];
+}
+
 - (IBAction)unwindToMainMenuViewController:(UIStoryboardSegue *)unwindSegue
 {
 }
-
 
 
 @end

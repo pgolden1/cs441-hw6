@@ -67,14 +67,6 @@
                                     <segue destination="ryM-US-Vx9" kind="presentation" id="Qea-Kv-aTv"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a48-pf-LG5">
-                                <rect key="frame" x="132" y="602" width="155" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Go to logged in screen"/>
-                                <connections>
-                                    <segue destination="cMv-RT-3Uk" kind="show" identifier="LogInSegue" id="tmn-4X-SLK"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Study Buddies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvn-Da-55T">
                                 <rect key="frame" x="151" y="131" width="112" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -93,11 +85,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="LogIn" destination="a48-pf-LG5" id="7Jk-ro-Euv"/>
                         <outlet property="errorMessage" destination="SXh-at-hMA" id="F5g-ph-t58"/>
                         <outlet property="password" destination="b7f-xr-7fc" id="JzZ-5X-0Gq"/>
                         <outlet property="query" destination="bHp-d2-LSk" id="tkV-mg-C4Y"/>
                         <outlet property="username" destination="5NG-Fp-tSN" id="00p-qt-1Ca"/>
+                        <segue destination="cMv-RT-3Uk" kind="presentation" identifier="loggedIn" id="GRe-Ls-yyA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -626,17 +618,19 @@
                     </view>
                     <connections>
                         <outlet property="email" destination="aue-5n-kBk" id="O1s-G5-zxg"/>
+                        <outlet property="errorMessage" destination="wVL-aG-2d7" id="ITI-2w-Dcy"/>
                         <outlet property="first" destination="tdr-36-xmi" id="YGe-8Y-Adu"/>
                         <outlet property="last" destination="e5V-Pj-gPc" id="Jll-ET-d5V"/>
                         <outlet property="password" destination="s0q-u4-iUZ" id="017-QZ-EN5"/>
                         <outlet property="repassword" destination="k8U-Tc-lM9" id="8dh-LB-It7"/>
                         <outlet property="username" destination="HQ8-wX-bGS" id="8GJ-Zn-R7g"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="LogInSegue" id="uPd-tg-FEM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O5A-ab-Q5I" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="kqp-o7-fap" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1066.6666666666667" y="112.5"/>
+            <point key="canvasLocation" x="1109" y="113"/>
         </scene>
     </scenes>
 </document>
