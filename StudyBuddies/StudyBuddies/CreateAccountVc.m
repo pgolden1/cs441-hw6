@@ -83,7 +83,7 @@
                 NSString *message = @"Login successful!";
                 [self performSelectorOnMainThread:@selector(updateDisplay:) withObject:message waitUntilDone:YES];
 
-                [self performSelectorOnMainThread:@selector(returnToPrev:) withObject:@"LogInSegue" waitUntilDone:YES];
+                [self performSelectorOnMainThread:@selector(returnToPrev:) withObject:@"unwindToMain" waitUntilDone:YES];
             }
             else
             {

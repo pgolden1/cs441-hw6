@@ -10,7 +10,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CurrentActiveVc : UIViewController
+@interface CurrentActiveVc : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property NSString *username;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property NSMutableArray *creditList;
 
 @end
 

@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #import "LoggedInVc.h"
+#import "CurrentActiveVc.h"
 
 
 @implementation LoggedInVc
@@ -20,6 +21,13 @@
 
 - (IBAction)unwindToLoggedInViewController:(UIStoryboardSegue *)unwindSegue
 {
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    CurrentActiveVc *vc = segue.destinationViewController;
+    if ([segue.identifier isEqualToString:@"gotoCurrentActive"]) {
+        vc.username = self.username;
+    }
 }
 
 @end
