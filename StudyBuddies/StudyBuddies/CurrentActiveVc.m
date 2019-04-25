@@ -17,6 +17,9 @@
     [super viewDidLoad];
     self.creditList = [[NSMutableArray alloc] initWithCapacity:8];
     self.sessionIDs = [[NSMutableArray alloc] initWithCapacity:8];
+}
+
+-(void)viewDidAppear:(BOOL)animated {
     [self getActiveSessions];
 }
 

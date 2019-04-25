@@ -108,6 +108,10 @@
                                 <rect key="frame" x="20" y="250" width="374" height="597"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="3l3-Wq-MTj" id="wLd-nA-vkx"/>
+                                    <outlet property="delegate" destination="3l3-Wq-MTj" id="Set-0f-FTE"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mR1-ra-08p">
                                 <rect key="frame" x="336" y="63" width="30" height="30"/>
@@ -135,6 +139,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="gzt-tg-091"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="WNN-LA-2eZ" id="Tlh-Do-E5w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="peD-U7-PUy" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="hqC-QX-l81" userLabel="Exit" sceneMemberID="exit"/>
@@ -176,7 +183,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="View all study groups you've RSVP'd to"/>
                                 <connections>
-                                    <segue destination="3l3-Wq-MTj" kind="show" id="kUj-VQ-GDR"/>
+                                    <segue destination="3l3-Wq-MTj" kind="show" identifier="yourSSVC" id="kUj-VQ-GDR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4D-8n-Uge">

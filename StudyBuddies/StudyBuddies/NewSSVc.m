@@ -99,6 +99,9 @@
                     case 2:
                         message = @"Insert failed";
                         break;
+                    case 3:
+                        message = @"Insert into rsvp failed";
+                        break;
                     default:
                         message = @"";
                         break;

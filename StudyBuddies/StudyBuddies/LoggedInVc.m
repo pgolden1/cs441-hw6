@@ -10,6 +10,7 @@
 
 #import "LoggedInVc.h"
 #import "CurrentActiveVc.h"
+#import "YourSSVc.h"
 
 
 @implementation LoggedInVc
@@ -24,8 +25,12 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    CurrentActiveVc *vc = segue.destinationViewController;
     if ([segue.identifier isEqualToString:@"gotoCurrentActive"]) {
+        CurrentActiveVc *vc = segue.destinationViewController;
+        vc.username = self.username;
+    }
+    if ([segue.identifier isEqualToString:@"yourSSVC"]) {
+        YourSSVc *vc = segue.destinationViewController;
         vc.username = self.username;
     }
 }

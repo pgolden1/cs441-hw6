@@ -12,6 +12,11 @@
 
 @interface YourSSVc : UIViewController
 
+@property NSString *username;
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property NSMutableArray *sessionInfo;
+@property NSMutableArray *sessionIDs;
+
 @end
 
 #endif /* YourSSVc_h */
