@@ -251,6 +251,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="obS-2S-TiQ"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="psW-Rl-u0d" id="vyZ-Tb-daq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mwp-gf-1fT" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="S2y-Rm-UPm" userLabel="Exit" sceneMemberID="exit"/>

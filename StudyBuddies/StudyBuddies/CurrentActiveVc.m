@@ -15,10 +15,62 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // replace the populating of this list with a call to the database to get the list of study sessions
-    self.creditList = [NSMutableArray arrayWithObjects:@"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwich", @"Creme Brelee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini", nil];
+    self.creditList = [[NSMutableArray alloc] initWithCapacity:8];
+    [self getActiveSessions];
 }
 
+- (void)getActiveSessions {
+    NSLog(@"in getactivesessions");
+    [self.creditList removeAllObjects];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL: [NSURL URLWithString: @"https://cs.binghamton.edu/~jkunnum1/php/active_sessions.php"]] ;
+    [request setHTTPMethod:@"GET"];
+    [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+        if(httpResponse.statusCode == 200)
+        {
+            NSError *parseError = nil;
+            NSDictionary *responseDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSASCIIStringEncoding error:&parseError];
+            NSLog(@"JSON result is %@", responseDictionary);
+            
+            NSInteger result = [[[responseDictionary valueForKey:@"result"] objectAtIndex:0] integerValue];
+            
+            if(result == 1)
+            {
+                NSLog(@"Login SUCCESS");
+                NSArray *items = [[responseDictionary valueForKey:@"items"] objectAtIndex:0];
+                for (int i = 0; i < items.count; i++)
+                {
+                    NSDictionary *row = [items objectAtIndex:i];
+                    NSString *stringRow = [NSString stringWithFormat:@"%@ | %@ | %@ | %@", row[@"subject"], row[@"date"], row[@"time"], row[@"location"]];
+                    
+                    [self performSelectorOnMainThread:@selector(updateDisplay:) withObject:stringRow waitUntilDone:YES];
+                }
+                
+            }
+            else
+            {
+                NSLog(@"Login FAILURE");
+            }
+        }
+        else
+        {
+            NSLog(@"Error: %ld", httpResponse.statusCode);
+        }
+        [self performSelectorOnMainThread:@selector(reloadTableView) withObject:NULL waitUntilDone:YES];
+    }];
+    [dataTask resume];
+}
+
+-(void)reloadTableView {
+    [self.tableView reloadData];
+}
+
+-(void)updateDisplay:(NSString *)data {
+    [self.creditList addObject:data];
+}
 
 
 - (IBAction)unwindToCurrentActiveViewController:(UIStoryboardSegue *)unwindSegue
@@ -45,7 +97,7 @@
     cell.textLabel.text = [self.creditList objectAtIndex:indexPath.row];
     
     // make button to add
-    CGRect buttonRect = CGRectMake(210, 25, 65, 25);
+    CGRect buttonRect = CGRectMake(330, 15, 40, 25);
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     button.frame = buttonRect;
     // set the button title here if it will always be the same
