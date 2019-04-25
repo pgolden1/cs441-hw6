@@ -15,6 +15,7 @@
 @property NSString *username;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property NSMutableArray *creditList;
+@property NSMutableArray *sessionIDs;
 
 @end
 
