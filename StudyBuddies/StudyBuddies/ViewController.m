@@ -81,6 +81,9 @@
     LoggedInVc *vc = segue.destinationViewController;
     if ([segue.identifier isEqualToString:@"loggedIn"]) {
         vc.username = self.username.text;
+        self.username.text = @"";
+        self.password.text = @"";
+        [self.errorMessage setText:@""];
     }
 }
 
