@@ -1,0 +1,243 @@
+commit 1abf3adcbc0ac40022b8ef9c4c3aea916026b97e
+Author: Julie Kunnumpurath <jkunnum1@binghamton.edu>
+Date:   Fri Apr 26 12:45:32 2019 -0400
+
+    update README.md
+
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit 4bd2a163a0710e939a96cd2d6ba758dd30a7b5fa
+Author: Julie Kunnumpurath <juliekunnumpurath@Julies-MacBook-Pro.local>
+Date:   Fri Apr 26 12:21:30 2019 -0400
+
+    touch up
+
+ .../UserInterfaceState.xcuserstate                 | Bin 39806 -> 41015 bytes
+ .../StudyBuddies/Base.lproj/Main.storyboard        |  38 ++++++++++++---------
+ StudyBuddies/StudyBuddies/ViewController.m         |   3 ++
+ 3 files changed, 24 insertions(+), 17 deletions(-)
+
+commit 8b0181fc19ee839da077fa272664f1102eeab9f8
+Author: Julie Kunnumpurath <juliekunnumpurath@Julies-MacBook-Pro.local>
+Date:   Thu Apr 25 16:19:33 2019 -0400
+
+    populated the current rsvp page. need to fix the php to make the creator of a studysession automatically rsvped
+
+ .../UserInterfaceState.xcuserstate                 | Bin 39302 -> 39806 bytes
+ .../xcdebugger/Breakpoints_v2.xcbkptlist           |  23 +++
+ .../StudyBuddies/Base.lproj/Main.storyboard        |   9 +-
+ StudyBuddies/StudyBuddies/CurrentActiveVc.m        |   3 +
+ StudyBuddies/StudyBuddies/LoggedInVc.m             |   7 +-
+ StudyBuddies/StudyBuddies/NewSSVc.m                |   3 +
+ StudyBuddies/StudyBuddies/YourSSVc.h               |   5 +
+ StudyBuddies/StudyBuddies/YourSSVc.m               | 195 +++++++++++++++++++++
+ 8 files changed, 243 insertions(+), 2 deletions(-)
+
+commit 6dc941486c49eeeffc55f6b5558db74ef1d6f637
+Author: Julie Kunnumpurath <juliekunnumpurath@Julies-MacBook-Pro.local>
+Date:   Thu Apr 25 00:52:42 2019 -0400
+
+    rsvp working. Just need to populate the rsvped page
+
+ .../UserInterfaceState.xcuserstate                 | Bin 39287 -> 39302 bytes
+ StudyBuddies/StudyBuddies/CurrentActiveVc.h        |   1 +
+ StudyBuddies/StudyBuddies/CurrentActiveVc.m        |  94 ++++++++++++++++++++-
+ 3 files changed, 91 insertions(+), 4 deletions(-)
+
+commit cf0494b862d64c305958a10621b39566b5676c5e
+Author: Julie Kunnumpurath <juliekunnumpurath@Julies-MacBook-Pro.local>
+Date:   Wed Apr 24 23:54:23 2019 -0400
+
+    loaded database info into tableview. need to get the rsvp working
+
+ .../UserInterfaceState.xcuserstate                 | Bin 38825 -> 39287 bytes
+ .../StudyBuddies/Base.lproj/Main.storyboard        |   3 ++
+ StudyBuddies/StudyBuddies/CurrentActiveVc.h        |   2 +-
+ StudyBuddies/StudyBuddies/CurrentActiveVc.m        |  58 +++++++++++++++++++--
+ 4 files changed, 59 insertions(+), 4 deletions(-)
+
+commit 25d490915d421f60e0a875cf2b99f9154f08da11
+Author: Julie Kunnumpurath <juliekunnumpurath@Julies-MacBook-Pro.local>
+Date:   Wed Apr 24 00:49:48 2019 -0400
+
+    added basic stuff to figure out tableview population
+
+ .../UserInterfaceState.xcuserstate                 | Bin 40357 -> 38825 bytes
+ .../StudyBuddies/Base.lproj/Main.storyboard        | 154 ++-------------------
+ StudyBuddies/StudyBuddies/CreateAccountVc.m        |   2 +-
+ StudyBuddies/StudyBuddies/CurrentActiveVc.h        |   6 +-
+ StudyBuddies/StudyBuddies/CurrentActiveVc.m        |  50 +++++++
+ StudyBuddies/StudyBuddies/LoggedInVc.m             |   8 ++
+ StudyBuddies/StudyBuddies/NewSSVc.m                |  83 +++++++++++
+ 7 files changed, 162 insertions(+), 141 deletions(-)
+
+commit 81261f140b73ac7a386d6e89365c174fe203135a
+Author: Julie Kunnumpurath <juliekunnumpurath@Julies-MacBook-Pro.local>
+Date:   Mon Apr 22 09:52:41 2019 -0400
+
+    php
+
+ .../UserInterfaceState.xcuserstate                 | Bin 37013 -> 40357 bytes
+ StudyBuddies/StudyBuddies/NewSSVc.m                |   3 --
+ php/login.php                                      |  32 +++++++++++++++++
+ php/new_account.php                                |  40 +++++++++++++++++++++
+ 4 files changed, 72 insertions(+), 3 deletions(-)
+
+commit ad6b088f1105fc41e0e7fb8be6e3ac35bcb8e8ba
+Author: Julie Kunnumpurath <juliekunnumpurath@Julies-MacBook-Pro.local>
+Date:   Mon Apr 22 01:38:16 2019 -0400
+
+    minor
+
+ .../UserInterfaceState.xcuserstate                 | Bin 34799 -> 37013 bytes
+ .../StudyBuddies/Base.lproj/Main.storyboard        |  85 +++++++++++++++------
+ StudyBuddies/StudyBuddies/NewSSVc.h                |   9 +++
+ StudyBuddies/StudyBuddies/NewSSVc.m                |  30 ++++++++
+ StudyBuddies/StudyBuddies/ViewController.m         |   3 +
+ 5 files changed, 103 insertions(+), 24 deletions(-)
+
+commit c82a330be0baf2ecbff1ff1d1bf57cc57991c5c7
+Author: Julie Kunnumpurath <juliekunnumpurath@Julies-MacBook-Pro.local>
+Date:   Sun Apr 21 22:20:01 2019 -0400
+
+    logged in successfully with username
+
+ .../UserInterfaceState.xcuserstate                  | Bin 33630 -> 34799 bytes
+ .../StudyBuddies/Base.lproj/Main.storyboard         |   9 +++++++++
+ StudyBuddies/StudyBuddies/LoggedInVc.h              |   3 +++
+ StudyBuddies/StudyBuddies/LoggedInVc.m              |   5 +++++
+ StudyBuddies/StudyBuddies/ViewController.m          |   8 ++++++++
+ 5 files changed, 25 insertions(+)
+
+commit 97060cd146fc39ad4caede08fe7107bf440873d5
+Author: Julie Kunnumpurath <juliekunnumpurath@Julies-MacBook-Pro.local>
+Date:   Sun Apr 21 21:50:49 2019 -0400
+
+    got log in working
+
+ .../UserInterfaceState.xcuserstate                 | Bin 31745 -> 33630 bytes
+ .../StudyBuddies/Base.lproj/Main.storyboard        |  14 +--
+ StudyBuddies/StudyBuddies/CreateAccountVc.h        |   2 +
+ StudyBuddies/StudyBuddies/CreateAccountVc.m        | 101 ++++++++++++++++++++-
+ StudyBuddies/StudyBuddies/ViewController.m         |   8 +-
+ 5 files changed, 111 insertions(+), 14 deletions(-)
+
+commit 901ce7f04096f1ab3bfba8e3831389c8cc75fc7b
+Author: Julie Kunnumpurath <juliekunnumpurath@Julies-MacBook-Pro.local>
+Date:   Sun Apr 21 17:17:29 2019 -0400
+
+    starting creating an account
+
+ StudyBuddies/.DS_Store                              | Bin 6148 -> 8196 bytes
+ StudyBuddies/StudyBuddies.xcodeproj/project.pbxproj |  20 ++++++++++----------
+ .../xcshareddata/WorkspaceSettings.xcsettings       |   5 +++++
+ .../UserInterfaceState.xcuserstate                  | Bin 29177 -> 31745 bytes
+ .../WorkspaceSettings.xcsettings                    |  18 ++++++++++++++++++
+ StudyBuddies/StudyBuddies/.DS_Store                 | Bin 0 -> 8196 bytes
+ .../StudyBuddies/Base.lproj/Main.storyboard         |  15 +++++++++++++--
+ StudyBuddies/StudyBuddies/CreateAccountVc.h         |   8 ++++++++
+ StudyBuddies/StudyBuddies/CreateAccountVc.m         |  11 +++++++++++
+ create_studdy_buddy_tables.sql                      |   3 +++
+ 10 files changed, 68 insertions(+), 12 deletions(-)
+
+commit f738ef2d6c9fedddfa75f990bbee4c6a23cd54ac
+Author: Peter Golden <pgolden1@binghamton.edu>
+Date:   Thu Apr 18 18:49:32 2019 -0400
+
+    Added App UI
+
+ .DS_Store                                          | Bin 6148 -> 6148 bytes
+ StudyBuddies/.DS_Store                             | Bin 0 -> 6148 bytes
+ .../StudyBuddies.xcodeproj/project.pbxproj         |  30 ++
+ .../project.xcworkspace/contents.xcworkspacedata   |  32 +-
+ .../UserInterfaceState.xcuserstate                 | Bin 9593 -> 38134 bytes
+ .../StudyBuddies/Base.lproj/Main.storyboard        | 438 ++++++++++++++++++++-
+ StudyBuddies/StudyBuddies/CreateAccountVc.h        |  17 +
+ StudyBuddies/StudyBuddies/CreateAccountVc.m        |  15 +
+ StudyBuddies/StudyBuddies/CurrentActiveVc.h        |  17 +
+ StudyBuddies/StudyBuddies/CurrentActiveVc.m        |  19 +
+ StudyBuddies/StudyBuddies/LoggedInVc.h             |  18 +
+ StudyBuddies/StudyBuddies/LoggedInVc.m             |  20 +
+ StudyBuddies/StudyBuddies/NewSSVc.h                |  17 +
+ StudyBuddies/StudyBuddies/NewSSVc.m                |  15 +
+ StudyBuddies/StudyBuddies/ViewController.h         |   2 +
+ StudyBuddies/StudyBuddies/ViewController.m         |   7 +
+ StudyBuddies/StudyBuddies/YourSSVc.h               |  17 +
+ StudyBuddies/StudyBuddies/YourSSVc.m               |  16 +
+ 18 files changed, 673 insertions(+), 7 deletions(-)
+
+commit 6f4952182c4dac31ea48f0458117a007235085c6
+Author: Julie Kunnumpurath <juliekunnumpurath@Julies-MacBook-Pro.local>
+Date:   Wed Apr 17 22:36:18 2019 -0400
+
+    added ui for create user
+
+ .DS_Store                                          | Bin 0 -> 6148 bytes
+ .../UserInterfaceState.xcuserstate                 | Bin 27843 -> 29177 bytes
+ .../StudyBuddies/Base.lproj/Main.storyboard        | 122 +++++++++++++++++++++
+ 3 files changed, 122 insertions(+)
+
+commit 4fb6fb0ba591e461f42593dd8cb1574c8c89c9dd
+Author: Julie Kunnumpurath <juliekunnumpurath@Julies-MacBook-Pro.local>
+Date:   Tue Apr 16 21:36:47 2019 -0400
+
+    got login working
+
+ .../UserInterfaceState.xcuserstate                 | Bin 21879 -> 27843 bytes
+ .../StudyBuddies/Base.lproj/Main.storyboard        |  43 ++++++++++++++++-
+ StudyBuddies/StudyBuddies/ViewController.h         |   4 ++
+ StudyBuddies/StudyBuddies/ViewController.m         |  52 +++++++++++++++++++--
+ php/login.php                                      |  11 -----
+ 5 files changed, 93 insertions(+), 17 deletions(-)
+
+commit 0ca62e3131ddb6c2cad9d8b48dcd0c36ded53d92
+Author: Julie Kunnumpurath <juliekunnumpurath@Julies-MacBook-Pro.local>
+Date:   Mon Apr 15 18:03:07 2019 -0400
+
+    testing php
+
+ .../UserInterfaceState.xcuserstate                 | Bin 0 -> 21879 bytes
+ .../xcschemes/xcschememanagement.plist             |  14 +++++++++++
+ .../StudyBuddies/Base.lproj/Main.storyboard        |  26 +++++++++++++++++----
+ StudyBuddies/StudyBuddies/ViewController.h         |   1 +
+ StudyBuddies/StudyBuddies/ViewController.m         |   8 +++++++
+ php/login.php                                      |  11 +++++++++
+ 6 files changed, 56 insertions(+), 4 deletions(-)
+
+commit 21932a8e9b9d8426ec3fa7c46949fa5d71cf76cc
+Author: Julie Kunnumpurath <juliekunnumpurath@Julies-MacBook-Pro.local>
+Date:   Thu Apr 11 23:21:04 2019 -0400
+
+    added initial database info
+
+ create_studdy_buddy_tables.sql | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+
+commit 0a0ed13013fab1fffddee6578654ec60c69e6c72
+Author: Peter Golden <pgolden1@binghamton.edu>
+Date:   Tue Apr 9 22:21:58 2019 -0400
+
+    Initial commit
+
+ README.md                                          |   1 +
+ .../StudyBuddies.xcodeproj/project.pbxproj         | 578 +++++++++++++++++++++
+ .../project.xcworkspace/contents.xcworkspacedata   |   7 +
+ .../xcshareddata/IDEWorkspaceChecks.plist          |   8 +
+ .../UserInterfaceState.xcuserstate                 | Bin 0 -> 9593 bytes
+ .../xcschemes/xcschememanagement.plist             |  14 +
+ StudyBuddies/StudyBuddies/AppDelegate.h            |  17 +
+ StudyBuddies/StudyBuddies/AppDelegate.m            |  51 ++
+ .../AppIcon.appiconset/Contents.json               |  98 ++++
+ .../StudyBuddies/Assets.xcassets/Contents.json     |   6 +
+ .../Base.lproj/LaunchScreen.storyboard             |  25 +
+ .../StudyBuddies/Base.lproj/Main.storyboard        |  24 +
+ StudyBuddies/StudyBuddies/Info.plist               |  45 ++
+ StudyBuddies/StudyBuddies/ViewController.h         |  15 +
+ StudyBuddies/StudyBuddies/ViewController.m         |  23 +
+ StudyBuddies/StudyBuddies/main.m                   |  16 +
+ StudyBuddies/StudyBuddiesTests/Info.plist          |  22 +
+ StudyBuddies/StudyBuddiesTests/StudyBuddiesTests.m |  37 ++
+ StudyBuddies/StudyBuddiesUITests/Info.plist        |  22 +
+ .../StudyBuddiesUITests/StudyBuddiesUITests.m      |  38 ++
+ 20 files changed, 1047 insertions(+)
